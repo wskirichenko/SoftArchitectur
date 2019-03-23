@@ -2,6 +2,8 @@
 
 const path = require('path')
 const { app, ipcMain } = require('electron')
+const go = require('gojs')
+
 
 const Window = require('./Window')
 const DataStore = require('./DataStore')
@@ -102,5 +104,8 @@ app.on('window-all-closed', function () {
 	console.log('Приложение остановлено')
   app.quit()
 })
+
+
+
 
 
